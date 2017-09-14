@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sifter</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="button1">Login with Gmail</string>
+    <string name="start_text">Click to access Gmail</string>
+    <string name="messages">TextView</string>
+    <string name="orText">or</string>
+    <string name="enterInfo">Enter an email and password:</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_other_mails">OtherMails</string>
+    <string name="subject">TextView</string>
+    <string name="sender">TextView</string>
+</resources>
