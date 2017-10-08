@@ -188,6 +188,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 //        return tableString;
     }
 
+    /**
+     * gets the history id of the most recent message in the database
+     * @return the most recent history
+     */
     public BigInteger getMostRecentHistId() {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         String query = "SELECT * FROM " + TABLE_NAME;
@@ -203,6 +207,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    /**
+     * checks if the database is empty or not
+     * @return boolean for if it's empty
+     */
     public boolean isEmpty() {
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         String query = "SELECT * FROM " + TABLE_NAME;

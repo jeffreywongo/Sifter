@@ -101,9 +101,11 @@ public class GmailListener extends IntentService {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d("MESSAGE", "onStartCommand called");
         super.onStartCommand(intent, flags, startId);
-        // used this if statement here because when the user opens the app while the service is
-        // still running, GmailActivity calls this method but onHandleIntent is not called
-        // this will repopulate the list in that case
+         /*
+         used this if statement here because when the user opens the app while the service is
+         still running, GmailActivity calls this method but onHandleIntent is not called
+         this will repopulate the list in that case
+         */
         if (rec != null) {
             // use this receiver to fill listview in GmailActiity
             fillListView();

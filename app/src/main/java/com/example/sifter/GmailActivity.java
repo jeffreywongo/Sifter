@@ -103,9 +103,16 @@ public class GmailActivity extends Activity /*AsyncTask<void, void, List<String>
         Log.d("MESSAGE", "GmailActivity started");
         // remove all notifications
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        notificationManager.cancelAll();
+        notificationManager.cancel(1234);
         setupServiceReceiver();
         getResultsFromApi();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.cancel(1234);
     }
 
     /**
@@ -352,7 +359,6 @@ public class GmailActivity extends Activity /*AsyncTask<void, void, List<String>
                     // update the ListViewHere
                     Log.d("MESSAGE", "result code was ok");
                     String messageInfo = resultData.getString("messageInfo");
-//                    listInfo.add(messageInfo);
                     Log.d("MESSAGE", "Message info added to List---------------------");
                     myAdapter.insert(messageInfo, 0);
                     updateListView();
