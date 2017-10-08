@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        email = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
+//        email = (EditText) findViewById(R.id.email);
+//        password = (EditText) findViewById(R.id.password);
     }
 
     public void onClickGmail(View view) {
