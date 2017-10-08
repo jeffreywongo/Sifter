@@ -25,9 +25,7 @@ constantly polls your gmail inbox. If there is a new message, the app creates a 
 saves the information of the message to a local database, and updates the list of messages in the GmailActivity.
 
 # Current issues
-The service sometimes randomly gets terminated and doesn't restart like it's supposed to. 
-If there is a notification and the app is opened without clicking the notification, it doesn't go away. 
-As in, the notification will remain unless it is interacted with. 
+The service sometimes randomly gets terminated and doesn't restart like it's supposed to. Other times it takes too long to  restart. 
 
 # Final thoughts
 Although it has its shortcomings, I am proud to say that this is my first real personal project. Having to learn android 
